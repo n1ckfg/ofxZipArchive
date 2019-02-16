@@ -9,8 +9,8 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxXmlPoco.h"
 
-#ifdef OF_USING_POCO
 #include <Poco/Zip/ZipArchive.h>
 #include <Poco/Zip/Compress.h>
 #include <Poco/Zip/Decompress.h>
@@ -74,6 +74,3 @@ public:
     bool isSuccessful;
 };
 
-#else
-#warning *** ofxZipUtils Requires Poco Library
-#endif
